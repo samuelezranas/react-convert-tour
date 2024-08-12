@@ -1,83 +1,16 @@
 import React from 'react'
+import BreadCrumps from '../components/BreadCrumps'
 
 function Contact() {
   return (
     <div>
-        {/* header */}
-        <header id="site-header" class="fixed-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        Tours
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="tours.html">Tours</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <form action="#search" method="GET" class="d-flex search-header ms-lg-2">
-                            <input class="form-control" 
-                                type="search" 
-                                placeholder="Enter Keyword..." 
-                                aria-label="Search"
-                                required />
-                            <button class="btn btn-style" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
-                    {/* toggle switch for light and dark theme */}
-                    <div class="cont-ser-position">
-                        <nav class="navigation">
-                            <div class="theme-switch-wrapper">
-                                <label class="theme-switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox" />
-                                    <div class="mode-container">
-                                        <i class="gg-sun"></i>
-                                        <i class="gg-moon"></i>
-                                    </div>
-                                </label>
-                            </div>
-                        </nav>
-                    </div>
-                    {/* //toggle switch for light and dark theme */}
-                </nav>
-            </div>
-        </header>
-        {/* //header */}
-
-        {/* inner banner */}
-        <section class="inner-banner py-sm-5 py-4">
-            <div class="w3l-breadcrumb pt-5 pb-4">
-                <div class="container py-xl-5 py-lg-4">
-                    <h4 class="inner-text-title font-weight-bold pt-5">Contact Us</h4>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><i class="fas fa-angle-right mx-2"></i>Contact</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        {/* //inner banner */}
+        <BreadCrumps page="Contact us" title="Contact our Company" />
 
         {/* contact */}
         <section class="w3l-contact-main py-5" id="contact">
             <div class="container py-lg-5 py-md-4 py-2">
-                <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+                <div class="title-main text-center mx-auto mb-md-5 mb-4" 
+                    style={{ maxWidth: "600px" }} >
                     <p>Contact Us</p>
                     <h3 class="title-style">Get In Touch</h3>
                 </div>
@@ -133,7 +66,8 @@ function Contact() {
         <section class="w3l-contact-main">
             <div class="contact-infhny py-5">
                 <div class="container py-lg-3">
-                    <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+                    <div class="title-main text-center mx-auto mb-md-5 mb-4" 
+                        style={{ maxWidth: "600px" }} >
                         <p>Send your Queries</p>
                         <h3 class="title-style">Drop Us A Line</h3>
                     </div>
@@ -163,70 +97,6 @@ function Contact() {
             </div>
         </section>
         {/* //contact-form */}
-
-        {/* footer */}
-        <footer class="w3l-footer-29-main py-5">
-            <div class="container pt-lg-5 pt-sm-4 pt-2 pb-2">
-                <div class="row footer-top-29">
-                    <div class="col-lg-4 col-md-6 footer-list-29">
-                        <h6 class="footer-title-29">Contact Info </h6>
-                        <p class="mb-2 pe-xl-5">Address : Tours, 10001, 5th Avenue, #06 lane street, NY - 62617.
-                        </p>
-                        <p class="mb-2">Phone Number : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
-                        <p class="mb-2">Email : <a href="mailto:info@example.com">info@example.com</a></p>
-                        <div class="mt-4">
-                            <ul class="social">
-                                <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li><a href="#github"><i class="fab fa-github"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
-                        <ul>
-                            <h6 class="footer-title-29">Quick Links</h6>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#workwithus">Work with us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#rewards">Rewards</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6 ps-lg-5 ps-lg-4 footer-list-29 mt-md-0 mt-4">
-                        <ul>
-                            <h6 class="footer-title-29">Explore</h6>
-                            <li><a href="#blog">Blog Posts</a></li>
-                            <li><a href="#privacy">Privacy policy</a></li>
-                            <li><a href="#partners">Our Partners</a></li>
-                            <li><a href="#license">License & uses</a></li>
-                            <li><a href="#events">Events</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8 footer-list-29 mt-lg-0 mt-4 ps-lg-5">
-                        <h6 class="footer-title-29">Subscribe</h6>
-                        <form action="#" class="subscribe" method="post">
-                            <input type="email" 
-                                name="email" 
-                                placeholder="Email Address" 
-                                required="" />
-                            <button class="btn btn-style mt-2">Subscribe</button>
-                        </form>
-                        <p class="mt-3">Subscribe to our mailing list and get updates to your email inbox.</p>
-                    </div>
-                </div>
-                {/* copyright */}
-                <p class="copy-footer-29 text-center mt-5 pt-lg-3">© 2021 Tours. All rights reserved. Design
-                    by <a href="https://w3layouts.com/" target="_blank">W3Layouts</a></p>
-            </div>
-        </footer>
-        {/* //footer */}
     </div>
   )
 }
